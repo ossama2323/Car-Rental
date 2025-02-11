@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo (1).png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rent Car</title>
+</head>
+<body>
+
+    <!-- START HERO -->
+     <section class="hero">
+      <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg w-100 sticky-top" id="navbar">
+          <div class="container d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img src="img/logo (1).png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    cars
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    booking
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="#" class="btn fa-bold text-capitalize nav-btn">sign in</a>
+            </div>
+          </div>
+        </nav>
+      <!-- END NAVBAR -->
+        <div class="container pt-5">
+          <div class="row pt-5 pb-5">
+            <h1 class="hero-title text-white">Looking for a <span>vehicle</span>? You're at the right space.</h1>
+          </div>
+          <div class="row p-3 pt-4 pb-4 bg-white car-type-container">
+            <div class="col-lg-6 col-12 text-start car-type">
+              <h5 class="car-type-title mb-3">What is your vehicle type?</h5>
+              <div class="cars-types mb-3 mb-lg-0 row w-100 overflow-hidden">
+                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+                  <img src="img/car.png" alt=""> 
+                  <span>car</span>
+                </div>
+                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+                  <img src="img/minibus.png" alt=""> 
+                  <span>minibus</span>
+                </div>
+                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+                  <img src="img/van.png" alt=""> 
+                  <span>van</span>
+                </div>
+                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+                  <img src="img/sportscar.png" alt=""> 
+                  <span>prestige</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 book-info">
+              <div class="row">
+                <div class="col-lg-6 col-12 mb-3">
+                  <h5 class="car-type-title mb-3">Pick Up Location</h5>
+                  <input class="input-group book-input" type="text" placeholder="Enter your pickup location">
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                  <h5 class="car-type-title mb-3">Drop Off Location</h5>
+                  <input class="input-group book-input" type="text" placeholder="Enter your dropoff location">
+                </div>
+                <div class="col-lg-6 col-12 mb-3 form-group">
+                  <h5 class="car-type-title mb-3">Pick Up Date & Time</h5>
+                  <input class="input-group book-input datepicker" type="text" placeholder="Enter your pickup location">                </div>
+                <div class="col-lg-6 col-12 form-group">
+                  <h5 class="car-type-title mb-3">Return Date & Time</h5>
+                  <input class="input-group book-input datepicker" type="text" placeholder="Enter your pickup location">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-end pt-4">
+              <a href="#" class="btn fa-bold text-capitalize nav-btn booking-btn">Find a vehicle</a>
+            </div>
+          </div>
+        </div>
+     </section>
+    <!-- END HERO -->
+    
+    <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/js/jquery.min.js"></script>
+    <script src="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
