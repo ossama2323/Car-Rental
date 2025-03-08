@@ -1,312 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo (1).png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
-    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Rent Car</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo (1).png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Rent Car</title>
 </head>
+
 <body>
 
-    <!-- START HERO -->
-     <section class="hero">
-      <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg w-100 sticky-top" id="navbar">
-          <div class="container d-flex justify-content-between">
-            <a class="navbar-brand" href="#"><img src="img/logo (1).png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <!-- START HERO -->
+  <section class="hero">
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg w-100 sticky-top" id="navbar">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#"><img src="img/logo (1).png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                cars
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    cars
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    booking
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    pages
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-              <a href="#" class="btn fa-bold text-capitalize nav-btn">sign in</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                booking
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="btn fa-bold text-capitalize nav-btn">sign in</a>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <div class="container pt-5">
+      <div class="row pt-5 pb-5">
+        <h1 class="hero-title text-white">Looking for a <span>vehicle</span>? You're at the right place.</h1>
+      </div>
+      <div class="row p-3 pt-4 pb-4 bg-white car-type-container">
+        <div class="col-lg-6 col-12 text-start car-type">
+          <h5 class="car-type-title mb-3">What is your vehicle type?</h5>
+          <div class="cars-types mb-3 mb-lg-0 row w-100 overflow-hidden">
+            <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+              <img src="img/car.png" alt="">
+              <span>car</span>
             </div>
-          </div>
-        </nav>
-      <!-- END NAVBAR -->
-        <div class="container pt-5">
-          <div class="row pt-5 pb-5">
-            <h1 class="hero-title text-white">Looking for a <span>vehicle</span>? You're at the right place.</h1>
-          </div>
-          <div class="row p-3 pt-4 pb-4 bg-white car-type-container">
-            <div class="col-lg-6 col-12 text-start car-type">
-              <h5 class="car-type-title mb-3">What is your vehicle type?</h5>
-              <div class="cars-types mb-3 mb-lg-0 row w-100 overflow-hidden">
-                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
-                  <img src="img/car.png" alt=""> 
-                  <span>car</span>
-                </div>
-                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
-                  <img src="img/minibus.png" alt=""> 
-                  <span>minibus</span>
-                </div>
-                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
-                  <img src="img/van.png" alt=""> 
-                  <span>van</span>
-                </div>
-                <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
-                  <img src="img/sportscar.png" alt=""> 
-                  <span>prestige</span>
-                </div>
-              </div>
+            <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+              <img src="img/minibus.png" alt="">
+              <span>minibus</span>
             </div>
-            <div class="col-lg-6 col-12 book-info">
-              <div class="row">
-                <div class="col-lg-6 col-12 mb-3">
-                  <h5 class="car-type-title mb-3">Pick Up Location</h5>
-                  <input class="input-group book-input" type="text" placeholder="Enter your pickup location">
-                </div>
-                <div class="col-lg-6 col-12 mb-3">
-                  <h5 class="car-type-title mb-3">Drop Off Location</h5>
-                  <input class="input-group book-input" type="text" placeholder="Enter your dropoff location">
-                </div>
-                <div class="col-lg-6 col-12 mb-3 form-group">
-                  <h5 class="car-type-title mb-3">Pick Up Date & Time</h5>
-                  <div class="d-flex">
-                    <input class="input-group book-date-input datepicker" type="text" placeholder="Enter your Pick Up Date">
-                    <select class="book-time-input" name="" id="">
-                      <option selected value="">Time</option>
-                      <option value="">00:00</option>
-                      <option value="">00:30</option>
-                      <option value="">01:00</option>
-                      <option value="">01:30</option>
-                      <option value="">02:00</option>
-                      <option value="">02:30</option>
-                      <option value="">03:00</option>
-                      <option value="">03:30</option>
-                      <option value="">04:00</option>
-                      <option value="">04:30</option>
-                      <option value="">05:00</option>
-                      <option value="">05:30</option>
-                      <option value="">06:00</option>
-                      <option value="">06:30</option>
-                      <option value="">07:00</option>
-                      <option value="">07:30</option>
-                      <option value="">08:00</option>
-                      <option value="">08:30</option>
-                      <option value="">09:30</option>
-                      <option value="">09:30</option>
-                      <option value="">10:00</option>
-                      <option value="">10:30</option>
-                      <option value="">11:00</option>
-                      <option value="">11:30</option>
-                      <option value="">12:00</option>
-                      <option value="">12:30</option>
-                      <option value="">13:00</option>
-                      <option value="">13:30</option>
-                      <option value="">14:00</option>
-                      <option value="">14:30</option>
-                      <option value="">15:00</option>
-                      <option value="">15:30</option>
-                      <option value="">16:00</option>
-                      <option value="">16:30</option>
-                      <option value="">17:00</option>
-                      <option value="">17:30</option>
-                      <option value="">18:00</option>
-                      <option value="">18:30</option>
-                      <option value="">19:00</option>
-                      <option value="">19:30</option>
-                      <option value="">20:00</option>
-                      <option value="">20:30</option>
-                      <option value="">21:00</option>
-                      <option value="">21:30</option>
-                      <option value="">22:00</option>
-                      <option value="">22:30</option>
-                      <option value="">23:00</option>
-                      <option value="">23:30</option>
-                    </select>  
-                  </div>
-                </div>
-                <div class="col-lg-6 col-12 form-group">
-                  <h5 class="car-type-title mb-3">Return Date & Time</h5>
-                  <div class="d-flex">
-                    <input class="input-group book-date-input datepicker" type="text" placeholder="Enter your Return Date">
-                    <select class="book-time-input" name="" id="">
-                      <option selected value="">Time</option>
-                      <option value="">00:00</option>
-                      <option value="">00:30</option>
-                      <option value="">01:00</option>
-                      <option value="">01:30</option>
-                      <option value="">02:00</option>
-                      <option value="">02:30</option>
-                      <option value="">03:00</option>
-                      <option value="">03:30</option>
-                      <option value="">04:00</option>
-                      <option value="">04:30</option>
-                      <option value="">05:00</option>
-                      <option value="">05:30</option>
-                      <option value="">06:00</option>
-                      <option value="">06:30</option>
-                      <option value="">07:00</option>
-                      <option value="">07:30</option>
-                      <option value="">08:00</option>
-                      <option value="">08:30</option>
-                      <option value="">09:30</option>
-                      <option value="">09:30</option>
-                      <option value="">10:00</option>
-                      <option value="">10:30</option>
-                      <option value="">11:00</option>
-                      <option value="">11:30</option>
-                      <option value="">12:00</option>
-                      <option value="">12:30</option>
-                      <option value="">13:00</option>
-                      <option value="">13:30</option>
-                      <option value="">14:00</option>
-                      <option value="">14:30</option>
-                      <option value="">15:00</option>
-                      <option value="">15:30</option>
-                      <option value="">16:00</option>
-                      <option value="">16:30</option>
-                      <option value="">17:00</option>
-                      <option value="">17:30</option>
-                      <option value="">18:00</option>
-                      <option value="">18:30</option>
-                      <option value="">19:00</option>
-                      <option value="">19:30</option>
-                      <option value="">20:00</option>
-                      <option value="">20:30</option>
-                      <option value="">21:00</option>
-                      <option value="">21:30</option>
-                      <option value="">22:00</option>
-                      <option value="">22:30</option>
-                      <option value="">23:00</option>
-                      <option value="">23:30</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
+            <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+              <img src="img/van.png" alt="">
+              <span>van</span>
             </div>
-            <div class="col-12 text-end pt-4">
-              <a href="#" class="btn fa-bold text-capitalize nav-btn booking-btn">Find a vehicle</a>
-            </div>
-          </div>
-          <div class="steps row pt-5 pb-5 text-start">
-            <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
-              <div class="step-number text-center fw-bold mb-4">
-                <span>1</span>
-              </div>
-              <h4 class="step-title text-white">Choose a vehicle</h4>
-              <p class="step-desc">
-                Unlock unparalleled adventures and memorable journeys with our vast fleet of vehicles tailored to suit every need, taste, and destination.
-              </p>
-            </div>
-            <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
-              <div class="step-number text-center fw-bold mb-4">
-                <span>2</span>
-              </div>
-              <h4 class="step-title text-white">Pick location & date</h4>
-              <p class="step-desc">
-                Pick your ideal location and date, and let us take you on a journey filled with convenience, flexibility, and unforgettable experiences.</p>
-            </div>
-            <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
-              <div class="step-number text-center fw-bold mb-4">
-                <span>3</span>
-              </div>
-              <h4 class="step-title text-white">Make a booking</h4>
-              <p class="step-desc">
-                Secure your reservation with ease, unlocking a world of possibilities and embarking on your next adventure with confidence.</p>
-            </div>
-            <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
-              <div class="step-number text-center fw-bold mb-4">
-                <span>4</span>
-              </div>
-              <h4 class="step-title text-white">Sit back & relax</h4>
-              <p class="step-desc">
-                Hassle-free convenience as we take care of every detail, allowing you to unwind and embrace a journey filled comfort.</p>
+            <div class="type text-center d-flex flex-column align-items-center col-3 p-3">
+              <img src="img/sportscar.png" alt="">
+              <span>prestige</span>
             </div>
           </div>
         </div>
-     </section>
-    <!-- END HERO -->
-    <!-- START INFINITE SCROLL -->
-     <section class="infinit-scroll">
-        <div class="container-fluid wrapper position-relative overflow-hidden">
-          <div class="item item1 position-absolute text-center align-content-center ps-4 pe-4">
-            <img class="img-fluid w-75 h-75" src="img/bmw-logo.png" alt="">
-          </div>
-          <div class="item item2 position-absolute text-center ps-4 pe-4">
-            <img class="img-fluid w-100 h-100" src="img/Mercedes AMG.svg" alt="">
-          </div>
-          <div class="item item3 position-absolute text-center ps-4 pe-4">
-            <img class="img-fluid w-100 h-100" src="img/Dacia New.png" alt="">
-          </div>
-          <div class="item item4 position-absolute text-center align-content-center ps-4 pe-4">
-            <img class="img-fluid w-100 h-100" src="img/toyota-logo.png" alt="">
-          </div>
-          <div class="item item5 position-absolute text-center align-content-center ps-4 pe-4">
-            <img class="img-fluid" src="img/logo-cupra.png" alt="">
-          </div>
-          <div class="item item6 position-absolute text-center align-content-center">
-            <img class="img-fluid h-100" src="img/peugeot-logo.png" alt="">
-          </div>
-          <div class="item item7 position-absolute text-center align-content-center ps-4 pe-4">
-            <img class="img-fluid" src="img/lexus-logo.png" alt="">
-          </div>
-          <div class="item item8 position-absolute text-center align-content-center ps-4 pe-4">
-            <img class="img-fluid w-100 h-100" src="img/ferrari-logo.png" alt="">
+        <div class="col-lg-6 col-12 book-info">
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-3">
+              <h5 class="car-type-title mb-3">Pick Up Location</h5>
+              <input class="input-group book-input" type="text" placeholder="Enter your pickup location">
+            </div>
+            <div class="col-lg-6 col-12 mb-3">
+              <h5 class="car-type-title mb-3">Drop Off Location</h5>
+              <input class="input-group book-input" type="text" placeholder="Enter your dropoff location">
+            </div>
+            <div class="col-lg-6 col-12 mb-3 form-group">
+              <h5 class="car-type-title mb-3">Pick Up Date & Time</h5>
+              <div class="d-flex">
+                <input class="input-group book-date-input datepicker" type="text" placeholder="Enter your Pick Up Date">
+                <select class="book-time-input" name="" id="">
+                  <option selected value="">Time</option>
+                  <option value="">00:00</option>
+                  <option value="">00:30</option>
+                  <option value="">01:00</option>
+                  <option value="">01:30</option>
+                  <option value="">02:00</option>
+                  <option value="">02:30</option>
+                  <option value="">03:00</option>
+                  <option value="">03:30</option>
+                  <option value="">04:00</option>
+                  <option value="">04:30</option>
+                  <option value="">05:00</option>
+                  <option value="">05:30</option>
+                  <option value="">06:00</option>
+                  <option value="">06:30</option>
+                  <option value="">07:00</option>
+                  <option value="">07:30</option>
+                  <option value="">08:00</option>
+                  <option value="">08:30</option>
+                  <option value="">09:30</option>
+                  <option value="">09:30</option>
+                  <option value="">10:00</option>
+                  <option value="">10:30</option>
+                  <option value="">11:00</option>
+                  <option value="">11:30</option>
+                  <option value="">12:00</option>
+                  <option value="">12:30</option>
+                  <option value="">13:00</option>
+                  <option value="">13:30</option>
+                  <option value="">14:00</option>
+                  <option value="">14:30</option>
+                  <option value="">15:00</option>
+                  <option value="">15:30</option>
+                  <option value="">16:00</option>
+                  <option value="">16:30</option>
+                  <option value="">17:00</option>
+                  <option value="">17:30</option>
+                  <option value="">18:00</option>
+                  <option value="">18:30</option>
+                  <option value="">19:00</option>
+                  <option value="">19:30</option>
+                  <option value="">20:00</option>
+                  <option value="">20:30</option>
+                  <option value="">21:00</option>
+                  <option value="">21:30</option>
+                  <option value="">22:00</option>
+                  <option value="">22:30</option>
+                  <option value="">23:00</option>
+                  <option value="">23:30</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 form-group">
+              <h5 class="car-type-title mb-3">Return Date & Time</h5>
+              <div class="d-flex">
+                <input class="input-group book-date-input datepicker" type="text" placeholder="Enter your Return Date">
+                <select class="book-time-input" name="" id="">
+                  <option selected value="">Time</option>
+                  <option value="">00:00</option>
+                  <option value="">00:30</option>
+                  <option value="">01:00</option>
+                  <option value="">01:30</option>
+                  <option value="">02:00</option>
+                  <option value="">02:30</option>
+                  <option value="">03:00</option>
+                  <option value="">03:30</option>
+                  <option value="">04:00</option>
+                  <option value="">04:30</option>
+                  <option value="">05:00</option>
+                  <option value="">05:30</option>
+                  <option value="">06:00</option>
+                  <option value="">06:30</option>
+                  <option value="">07:00</option>
+                  <option value="">07:30</option>
+                  <option value="">08:00</option>
+                  <option value="">08:30</option>
+                  <option value="">09:30</option>
+                  <option value="">09:30</option>
+                  <option value="">10:00</option>
+                  <option value="">10:30</option>
+                  <option value="">11:00</option>
+                  <option value="">11:30</option>
+                  <option value="">12:00</option>
+                  <option value="">12:30</option>
+                  <option value="">13:00</option>
+                  <option value="">13:30</option>
+                  <option value="">14:00</option>
+                  <option value="">14:30</option>
+                  <option value="">15:00</option>
+                  <option value="">15:30</option>
+                  <option value="">16:00</option>
+                  <option value="">16:30</option>
+                  <option value="">17:00</option>
+                  <option value="">17:30</option>
+                  <option value="">18:00</option>
+                  <option value="">18:30</option>
+                  <option value="">19:00</option>
+                  <option value="">19:30</option>
+                  <option value="">20:00</option>
+                  <option value="">20:30</option>
+                  <option value="">21:00</option>
+                  <option value="">21:30</option>
+                  <option value="">22:00</option>
+                  <option value="">22:30</option>
+                  <option value="">23:00</option>
+                  <option value="">23:30</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-     </section>
-    <!-- END INFINITE SCROLL -->
+        <div class="col-12 text-end pt-4">
+          <a href="#" class="btn fa-bold text-capitalize nav-btn booking-btn">Find a vehicle</a>
+        </div>
+      </div>
+      <div class="steps row pt-5 pb-5 text-start">
+        <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
+          <div class="step-number text-center fw-bold mb-4">
+            <span>1</span>
+          </div>
+          <h4 class="step-title text-white">Choose a vehicle</h4>
+          <p class="step-desc">
+            Unlock unparalleled adventures and memorable journeys with our vast fleet of vehicles tailored to suit every
+            need, taste, and destination.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
+          <div class="step-number text-center fw-bold mb-4">
+            <span>2</span>
+          </div>
+          <h4 class="step-title text-white">Pick location & date</h4>
+          <p class="step-desc">
+            Pick your ideal location and date, and let us take you on a journey filled with convenience, flexibility,
+            and unforgettable experiences.</p>
+        </div>
+        <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
+          <div class="step-number text-center fw-bold mb-4">
+            <span>3</span>
+          </div>
+          <h4 class="step-title text-white">Make a booking</h4>
+          <p class="step-desc">
+            Secure your reservation with ease, unlocking a world of possibilities and embarking on your next adventure
+            with confidence.</p>
+        </div>
+        <div class="col-sm-12 col-lg-3 mb-lg-0 mb-4">
+          <div class="step-number text-center fw-bold mb-4">
+            <span>4</span>
+          </div>
+          <h4 class="step-title text-white">Sit back & relax</h4>
+          <p class="step-desc">
+            Hassle-free convenience as we take care of every detail, allowing you to unwind and embrace a journey filled
+            comfort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END HERO -->
+  <!-- START INFINITE SCROLL -->
+  <section class="infinit-scroll">
+    <div class="container-fluid wrapper position-relative overflow-hidden">
+      <div class="item item1 position-absolute text-center align-content-center ps-4 pe-4">
+        <img class="img-fluid w-75 h-75" src="img/bmw-logo.png" alt="">
+      </div>
+      <div class="item item2 position-absolute text-center ps-4 pe-4">
+        <img class="img-fluid w-100 h-100" src="img/Mercedes AMG.svg" alt="">
+      </div>
+      <div class="item item3 position-absolute text-center ps-4 pe-4">
+        <img class="img-fluid w-100 h-100" src="img/Dacia New.png" alt="">
+      </div>
+      <div class="item item4 position-absolute text-center align-content-center ps-4 pe-4">
+        <img class="img-fluid w-100 h-100" src="img/toyota-logo.png" alt="">
+      </div>
+      <div class="item item5 position-absolute text-center align-content-center ps-4 pe-4">
+        <img class="img-fluid" src="img/logo-cupra.png" alt="">
+      </div>
+      <div class="item item6 position-absolute text-center align-content-center">
+        <img class="img-fluid h-100" src="img/peugeot-logo.png" alt="">
+      </div>
+      <div class="item item7 position-absolute text-center align-content-center ps-4 pe-4">
+        <img class="img-fluid" src="img/lexus-logo.png" alt="">
+      </div>
+      <div class="item item8 position-absolute text-center align-content-center ps-4 pe-4">
+        <img class="img-fluid w-100 h-100" src="img/ferrari-logo.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- END INFINITE SCROLL -->
 
-    <!-- START Features -->
-     <section class="features-section">
-      <div class="container">
-        <!-- START TITLE SECTION  -->
-        <div class="row pt-5 pb-5">
-          <div class="col-12 text-center title-section-content">
-            <span class="p-1">Why Choose Us</span>
-            <h2 class="mt-3 mb-3">Our Features</h2>
-            <p class=" text-black-50">Discover a world of convenience, safety, and customization, paving the way for unforgettable adventures and seamless mobility solutions.</p>
-          </div>
-       </div>
+  <!-- START Features -->
+  <section class="features-section">
+    <div class="container">
+      <!-- START TITLE SECTION  -->
+      <div class="row pt-5 pb-5">
+        <div class="col-12 text-center title-section-content">
+          <span class="p-1">Why Choose Us</span>
+          <h2 class="mt-3 mb-3">Our Features</h2>
+          <p class=" text-black-50">Discover a world of convenience, safety, and customization, paving the way for
+            unforgettable adventures and seamless mobility solutions.</p>
+        </div>
+      </div>
       <!-- END TITLE SECTION  -->
-       <div class="row pt-5 pb-5 features-content">
+      <div class="row pt-5 pb-5 features-content">
         <div class="col-lg-3 col-12">
           <div class="row mb-4">
             <div class="col-lg-3 col-2">
@@ -319,7 +341,8 @@
                 First class services
               </h4>
               <p class="text-black-50">
-                Where luxury meets exceptional care, creating unforgettable moments and exceeding your every expectation.
+                Where luxury meets exceptional care, creating unforgettable moments and exceeding your every
+                expectation.
               </p>
             </div>
           </div>
@@ -374,90 +397,123 @@
             </div>
           </div>
         </div>
-       </div>
       </div>
-     </section>
-    <!-- END Features -->
-    <!-- START ABOUT -->
-     <section class="about-section position-relative">
-      <div class="lyr position-absolute w-100 h-100">
-        <div class="container pt-5 pb-5">
-          <div class="row pt-5 pb-5">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <h2 class="text-white mb-4">
-                We offer customers a wide range of <span>commercial cars</span> and <span>luxury cars</span> for any occasion.
-              </h2>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <p class="mt-lg-0 mt-md-4 mt-sm-4">
-                At our car rental agency, we believe that everyone deserves to experience the pleasure of driving a reliable and comfortable vehicle, regardless of their budget. We have curated a diverse fleet of well-maintained cars, ranging from sleek sedans to spacious SUVs, all at competitive prices. With our streamlined rental process, you can quickly and conveniently reserve your desired vehicle. Whether you need transportation for a business trip, family vacation, or simply want to enjoy a weekend getaway, we have flexible rental options to accommodate your schedule.
-              </p>
+    </div>
+  </section>
+  <!-- END Features -->
+  <!-- START ABOUT -->
+  <section class="about-section position-relative">
+    <div class="lyr position-absolute w-100 h-100">
+      <div class="container pt-5 pb-5">
+        <div class="row pt-5 pb-5">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h2 class="text-white mb-4">
+              We offer customers a wide range of <span>commercial cars</span> and <span>luxury cars</span> for any
+              occasion.
+            </h2>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <p class="mt-lg-0 mt-md-4 mt-sm-4">
+              At our car rental agency, we believe that everyone deserves to experience the pleasure of driving a
+              reliable and comfortable vehicle, regardless of their budget. We have curated a diverse fleet of
+              well-maintained cars, ranging from sleek sedans to spacious SUVs, all at competitive prices. With our
+              streamlined rental process, you can quickly and conveniently reserve your desired vehicle. Whether you
+              need transportation for a business trip, family vacation, or simply want to enjoy a weekend getaway, we
+              have flexible rental options to accommodate your schedule.
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5 pb-5 about-info">
+          <div class="col-lg-3 col-md-6 text-center about-info-box">
+            <div>
+              <span>15425</span>
+              <p>Completed Orders</p>
             </div>
           </div>
-          <div class="row pt-5 pb-5 about-info">
-            <div class="col-lg-3 col-md-6 text-center about-info-box">
-              <div>
-                <span>15425</span>
-                <p>Completed Orders</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center mt-lg-0 mt-md-0 mt-4 about-info-box">
-              <div>
+          <div class="col-lg-3 col-md-6 text-center mt-lg-0 mt-md-0 mt-4 about-info-box">
+            <div>
               <span>8745</span>
               <p>Happy Customers</p>
-              </div>
             </div>
-            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 text-center about-info-box">
-              <div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 text-center about-info-box">
+            <div>
               <span>235</span>
               <p>Vehicles Fleet</p>
-              </div>
             </div>
-            <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 text-center about-info-box">
-              <div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-lg-0 mt-4 text-center about-info-box">
+            <div>
               <span>15</span>
               <p>Years Experience</p>
-              </div>
             </div>
           </div>
         </div>
       </div>
-     </section>
-    <!-- END ABOUT -->
-    <!-- START VEHICLE FLEET -->
-     <section class="vehicle-fleet">
-        <div class="container pt-5 pb-5">
-          <!-- START TITLE SECTION  -->
-          <div class="row pt-5 pb-5">
-            <div class="col-12 text-center title-section-content">
-              <span class="p-1">Enjoy Your Ride</span>
-              <h2 class="mt-3 mb-3">Our Vehicle Fleet</h2>
-              <p class=" text-black-50">Driving your dreams to reality with an exquisite fleet of versatile vehicles for unforgettable journeys.</p>
-            </div>
-          </div>
-          <!-- END TITLE SECTION  -->
-           <div class="row pt-4 pb-4">
-              <div class="card-slider owl-carousel owl-theme row-cols-auto">
-                <div class="card item row">
-                  <div class="card-desc">
-                    <div class="card-img row">
-                      <img src="img/ferrari-enzo.jpg" alt="">
-                    </div>
-                    <div class="card-body row">
-                      
+    </div>
+  </section>
+  <!-- END ABOUT -->
+  <!-- START VEHICLE FLEET -->
+  <section class="vehicle-fleet">
+    <div class="container pt-5 pb-5">
+      <!-- START TITLE SECTION  -->
+      <div class="row pt-5 pb-5">
+        <div class="col-12 text-center title-section-content">
+          <span class="p-1">Enjoy Your Ride</span>
+          <h2 class="mt-3 mb-3">Our Vehicle Fleet</h2>
+          <p class=" text-black-50">Driving your dreams to reality with an exquisite fleet of versatile vehicles for
+            unforgettable journeys.</p>
+        </div>
+      </div>
+      <!-- END TITLE SECTION  -->
+      <div class="row pt-4 pb-4">
+        <div class="fleet-cards-slider row-cols-auto">
+          <div class="fleet-cards w-100 h-100 row">
+            <div class="fleet-card col-4">
+              <div class="fleet-card-img row mb-2">
+                <img class="img-fluid" src="img/ferrari-enzo.jpg" alt="">
+              </div>
+              <div class="fleet-card-body row ps-4 pe-4">
+                <div class="fleet-card-body-top row pt-2 pb-4">
+                  <div class="car-info col-10">
+                      <h4 class="text-capitalize">ferrari-enzo</h4>
+                      <div class="car-info">
+                        <span><img class="me-2" src="/img/1-green.svg" width="20px" height="20px" alt="">5</span>
+                        <span class="ms-2"><img class="me-2" src="/img/2-green.svg" width="18px" height="18px" alt="">2</span>
+                        <span class="ms-2"><img class="me-2" src="/img/3-green.svg" width="18px" height="18px" alt="">4</span>
+                        <span class="ms-2"><img class="me-2" src="/img/4-green.svg" width="18px" height="18px" alt="">suv</span>
+                      </div>
+                  </div>
+                  <div class="car-like col-2">
+                    <div class="d-flex align-items-center">
+                      <i class="icofont-ui-love"></i>
+                      <span class="ms-2">0</span>
                     </div>
                   </div>
                 </div>
+                <div class="fleet-card-body-bottom row pt-4 pb-2">
+                  <div class="car-price col-6">
+                    <p class="m-0">Daily rate from</p>
+                    <span>$225</span>
+                  </div>
+                  <div class="fleet-card-btn col-6">
+                    <a href="#" class="btn fa-bold text-capitalize nav-btn">rent now</a>
+                  </div>
+                </div>
               </div>
-           </div>
+            </div>
+          </div>
+
         </div>
-     </section>
-    <!-- END VEHICLE FLEET -->
-    
-    <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="plugins/js/jquery.min.js"></script>
-    <script src="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+  <!-- END VEHICLE FLEET -->
+
+  <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="plugins/js/jquery.min.js"></script>
+  <script src="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

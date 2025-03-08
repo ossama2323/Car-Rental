@@ -528,6 +528,151 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed2e";
 }
 
+.icofont-award:before
+{
+  content: "\eace";
+}
+
+.icofont-search-1:before
+{
+  content: "\ed11";
+}
+
+.icofont-ui-search:before
+{
+  content: "\ec82";
+}
+
+.icofont-search-2:before
+{
+  content: "\ed12";
+}
+
+.icofont-search:before
+{
+  content: "\ed1b";
+}
+
+.icofont-search-user:before
+{
+  content: "\ed1a";
+}
+
+.icofont-search-job:before
+{
+  content: "\ed15";
+}
+
+.icofont-search-property:before
+{
+  content: "\ed17";
+}
+
+.icofont-duotone.icofont-tags-trio:before
+{
+  content: "\13bcb";
+}
+
+.icofont-duotone.icofont-tags-trio:after
+{
+  content: "\13bca";
+}
+
+.icofont-duotone.icofont-tags-squared:before
+{
+  content: "\13bc9";
+}
+
+.icofont-duotone.icofont-tags-squared:after
+{
+  content: "\13bc8";
+}
+
+.icofont-duotone.icofont-tag-double:before
+{
+  content: "\13bc7";
+}
+
+.icofont-duotone.icofont-tag-double:after
+{
+  content: "\13bc6";
+}
+
+.icofont-duotone.icofont-user:before
+{
+  content: "\13d06";
+}
+
+.icofont-duotone.icofont-user:after
+{
+  content: "\13d13";
+}
+
+.icofont-duotone.icofont-unpublish:before
+{
+  content: "\13cff";
+}
+
+.icofont-duotone.icofont-unpublish:after
+{
+  content: "\13cfe";
+}
+
+.icofont-road:before
+{
+  content: "\efd8";
+}
+
+.icofont-tags:before
+{
+  content: "\f005";
+}
+
+.icofont-ui-user:before
+{
+  content: "\ec8e";
+}
+
+.icofont-ui-user-group:before
+{
+  content: "\ec8d";
+}
+
+.icofont-duotone.icofont-users:before
+{
+  content: "\13bda";
+}
+
+.icofont-duotone.icofont-users:after
+{
+  content: "\13bd9";
+}
+
+.icofont-duotone.icofont-add-users:before
+{
+  content: "\13ab7";
+}
+
+.icofont-duotone.icofont-add-users:after
+{
+  content: "\13ab6";
+}
+
+.icofont-duotone.icofont-manage-user:before
+{
+  content: "\13b5e";
+}
+
+.icofont-duotone.icofont-manage-user:after
+{
+  content: "\13b5d";
+}
+
+.icofont-user-male:before
+{
+  content: "\ed03";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {
