@@ -380,12 +380,17 @@ a{
 .fleet-cards-slider{
     width: 100%;
     height: auto;
-    background-color: #1ECB15;
 }
 .fleet-card{
     height: 100%;
-    background-color: #d31010;
     padding: 10px;
+    border: solid 1px #bdbdbd;
+    box-shadow: 1px 1px 8px #00000057;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .fleet-card-img{
     border-radius: 25px;
@@ -401,6 +406,11 @@ a{
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
 }
 .fleet-card-img:hover img{
     transform: scale(1.1);
@@ -409,4 +419,53 @@ a{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+.fleet-card-body-top .car-info h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.fleet-card-body-top .car-info span{
+    font-size: 14px;
+    font-weight: 700;
+}
+.fleet-card-body-top .car-like{
+    font-size: 14px;
+}
+.fleet-card-body-top .car-like i{
+    color: #bdbdbd;
+}
+
+.fleet-card-body-bottom{
+    border-top: 1px solid #bdbdbd;
+    align-items: center;
+}
+.fleet-card-body-bottom .car-price p{
+    color: #333333;
+    font-size: 14px;
+}
+.fleet-card-body-bottom .car-price span{
+    font-size: 26px;
+    font-weight: 700;
+}
+.card-btn{
+    background-color: var(--green-color);
+    color: #ffffff;
+    padding: 5px 15px 8px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.card-btn:focus{
+    box-shadow: none;
+}
+.card-btn:hover{
+    color: #ffffff;
+    box-shadow: 0px 0px 10px 1px #1ECB15;
+}
+
+
+
 /* END VEHICLE FLEET  */

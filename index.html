@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/logo (1).png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <link rel="stylesheet"
-    href="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
   <link rel="stylesheet" href="style.css">
   <title>Rent Car</title>
 </head>
@@ -468,36 +469,135 @@
       <!-- END TITLE SECTION  -->
       <div class="row pt-4 pb-4">
         <div class="fleet-cards-slider row-cols-auto">
-          <div class="fleet-cards w-100 h-100 row">
+          <div class="fleet-cards w-100 row d-flex flex-nowrap overflow-hidden pe-4 pt-4 pb-4">
             <div class="fleet-card col-4">
-              <div class="fleet-card-img row mb-2">
+              <div class="fleet-card-img mb-2">
                 <img class="img-fluid" src="img/ferrari-enzo.jpg" alt="">
               </div>
-              <div class="fleet-card-body row ps-4 pe-4">
-                <div class="fleet-card-body-top row pt-2 pb-4">
+              <div class="fleet-card-body row ps-5 pe-4">
+                <div class="fleet-card-body-top row ps-0 pt-2 pb-4">
                   <div class="car-info col-10">
                       <h4 class="text-capitalize">ferrari-enzo</h4>
                       <div class="car-info">
                         <span><img class="me-2" src="/img/1-green.svg" width="20px" height="20px" alt="">5</span>
                         <span class="ms-2"><img class="me-2" src="/img/2-green.svg" width="18px" height="18px" alt="">2</span>
                         <span class="ms-2"><img class="me-2" src="/img/3-green.svg" width="18px" height="18px" alt="">4</span>
-                        <span class="ms-2"><img class="me-2" src="/img/4-green.svg" width="18px" height="18px" alt="">suv</span>
+                        <span class="ms-2 text-uppercase"><img class="me-2" src="/img/4-green.svg" width="18px" height="18px" alt="">suv</span>
                       </div>
                   </div>
                   <div class="car-like col-2">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center text-center">
                       <i class="icofont-ui-love"></i>
                       <span class="ms-2">0</span>
                     </div>
                   </div>
                 </div>
-                <div class="fleet-card-body-bottom row pt-4 pb-2">
-                  <div class="car-price col-6">
+                <div class="fleet-card-body-bottom row ps-0 pe-0 pt-4 pb-2">
+                  <div class="car-price col-7">
                     <p class="m-0">Daily rate from</p>
                     <span>$225</span>
                   </div>
-                  <div class="fleet-card-btn col-6">
-                    <a href="#" class="btn fa-bold text-capitalize nav-btn">rent now</a>
+                  <div class="fleet-card-btn col-5">
+                    <a href="#" class="btn fa-bold text-capitalize card-btn">rent now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fleet-card ms-3 col-4">
+              <div class="fleet-card-img mb-2">
+                <img class="img-fluid" src="img/ferrari-enzo.jpg" alt="">
+              </div>
+              <div class="fleet-card-body row ps-5 pe-4">
+                <div class="fleet-card-body-top row ps-0 pt-2 pb-4">
+                  <div class="car-info col-10">
+                      <h4 class="text-capitalize">ferrari-enzo</h4>
+                      <div class="car-info">
+                        <span><img class="me-2" src="/img/1-green.svg" width="20px" height="20px" alt="">5</span>
+                        <span class="ms-2"><img class="me-2" src="/img/2-green.svg" width="18px" height="18px" alt="">2</span>
+                        <span class="ms-2"><img class="me-2" src="/img/3-green.svg" width="18px" height="18px" alt="">4</span>
+                        <span class="ms-2 text-uppercase"><img class="me-2" src="/img/4-green.svg" width="18px" height="18px" alt="">suv</span>
+                      </div>
+                  </div>
+                  <div class="car-like col-2">
+                    <div class="d-flex align-items-center text-center">
+                      <i class="icofont-ui-love"></i>
+                      <span class="ms-2">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fleet-card-body-bottom row ps-0 pe-0 pt-4 pb-2">
+                  <div class="car-price col-7">
+                    <p class="m-0">Daily rate from</p>
+                    <span>$225</span>
+                  </div>
+                  <div class="fleet-card-btn col-5">
+                    <a href="#" class="btn fa-bold text-capitalize card-btn">rent now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fleet-card ms-3 col-4">
+              <div class="fleet-card-img mb-2">
+                <img class="img-fluid" src="img/ferrari-enzo.jpg" alt="">
+              </div>
+              <div class="fleet-card-body row ps-5 pe-4">
+                <div class="fleet-card-body-top row ps-0 pt-2 pb-4">
+                  <div class="car-info col-10">
+                      <h4 class="text-capitalize">ferrari-enzo</h4>
+                      <div class="car-info">
+                        <span><img class="me-2" src="/img/1-green.svg" width="20px" height="20px" alt="">5</span>
+                        <span class="ms-2"><img class="me-2" src="/img/2-green.svg" width="18px" height="18px" alt="">2</span>
+                        <span class="ms-2"><img class="me-2" src="/img/3-green.svg" width="18px" height="18px" alt="">4</span>
+                        <span class="ms-2 text-uppercase"><img class="me-2" src="/img/4-green.svg" width="18px" height="18px" alt="">suv</span>
+                      </div>
+                  </div>
+                  <div class="car-like col-2">
+                    <div class="d-flex align-items-center text-center">
+                      <i class="icofont-ui-love"></i>
+                      <span class="ms-2">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fleet-card-body-bottom row ps-0 pe-0 pt-4 pb-2">
+                  <div class="car-price col-7">
+                    <p class="m-0">Daily rate from</p>
+                    <span>$225</span>
+                  </div>
+                  <div class="fleet-card-btn col-5">
+                    <a href="#" class="btn fa-bold text-capitalize card-btn">rent now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fleet-card ms-3 col-4">
+              <div class="fleet-card-img mb-2">
+                <img class="img-fluid" src="img/ferrari-enzo.jpg" alt="">
+              </div>
+              <div class="fleet-card-body row ps-5 pe-4">
+                <div class="fleet-card-body-top row ps-0 pt-2 pb-4">
+                  <div class="car-info col-10">
+                      <h4 class="text-capitalize">ferrari-enzo</h4>
+                      <div class="car-info">
+                        <span><img class="me-2" src="/img/1-green.svg" width="20px" height="20px" alt="">5</span>
+                        <span class="ms-2"><img class="me-2" src="/img/2-green.svg" width="18px" height="18px" alt="">2</span>
+                        <span class="ms-2"><img class="me-2" src="/img/3-green.svg" width="18px" height="18px" alt="">4</span>
+                        <span class="ms-2 text-uppercase"><img class="me-2" src="/img/4-green.svg" width="18px" height="18px" alt="">suv</span>
+                      </div>
+                  </div>
+                  <div class="car-like col-2">
+                    <div class="d-flex align-items-center text-center">
+                      <i class="icofont-ui-love"></i>
+                      <span class="ms-2">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fleet-card-body-bottom row ps-0 pe-0 pt-4 pb-2">
+                  <div class="car-price col-7">
+                    <p class="m-0">Daily rate from</p>
+                    <span>$225</span>
+                  </div>
+                  <div class="fleet-card-btn col-5">
+                    <a href="#" class="btn fa-bold text-capitalize card-btn">rent now</a>
                   </div>
                 </div>
               </div>
@@ -513,6 +613,7 @@
   <script src="plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="plugins/js/jquery.min.js"></script>
   <script src="plugins/bootstrap-datepicker-master/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="script.js"></script>
 </body>
 
